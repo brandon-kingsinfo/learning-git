@@ -1,5 +1,6 @@
-# adding a new file example.txt
-
+# rename and delete files
+### adding a new file example.txt
+```bash
 brandonh@DESKTOP-H7TMT89 MINGW64 /d/git-demo (master)
 $ npp example.txt
 
@@ -20,9 +21,9 @@ $ git commit -m "adding example file"
 [master 1a72bb8] adding example file
 1 file changed, 1 insertion(+)
 create mode 100644 example.txt
-
-# rename the file to demo.txt
-
+```
+### rename the file to demo.txt
+```bash
 brandonh@DESKTOP-H7TMT89 MINGW64 /d/git-demo (master)
 $ git mv example.txt demo.txt
 
@@ -42,9 +43,9 @@ rename example.txt => demo.txt (100%)
 brandonh@DESKTOP-H7TMT89 MINGW64 /d/git-demo (master)
 $ ls
 README.md demo.txt second-file.md
-
-# to delete a file
-
+```
+### to delete a file
+```bash
 brandonh@DESKTOP-H7TMT89 MINGW64 /d/git-demo (master)
 $ git rm demo.txt
 rm 'demo.txt'
@@ -61,22 +62,22 @@ $ git commit -m "delete demo.txt"
 [master 935e24e] delete demo.txt
 1 file changed, 1 deletion(-)
 delete mode 100644 demo.txt
+```
+# rename and delete files outside of git
 
-# managing files outside of git
+### (rename or delete files using gitbash command) instead of git command
 
-# (rename or delete files using gitbash command) instead of git command
-
-# to stage all kinds of changes, use git add -A
-
+### to stage all kinds of changes, use git add -A
+```bash
 brandonh@DESKTOP-H7TMT89 MINGW64 /d/git-demo (master)
 $ touch myfile.txt
 
 brandonh@DESKTOP-H7TMT89 MINGW64 /d/git-demo (master)
 $ ls
 README.md myfile.txt second-file.md
-
-# rename the file outside of git
-
+```
+### rename the file outside of git
+```bash
 brandonh@DESKTOP-H7TMT89 MINGW64 /d/git-demo (master)
 $ mv second-file.md second-file.txt
 
@@ -105,9 +106,9 @@ Changes to be committed:
 (use "git restore --staged <file>..." to unstage)
 new file: myfile.txt
 renamed: second-file.md -> second-file.txt
-
-# to delete a file
-
+```
+### delete a file outside of git
+```bash
 brandonh@DESKTOP-H7TMT89 MINGW64 /d/git-demo (master)
 $ rm myfile.txt
 
@@ -136,3 +137,4 @@ $ git commit -m "remove myfile.txt"
 [master bddaf9e] remove myfile.txt
 1 file changed, 0 insertions(+), 0 deletions(-)
 delete mode 100644 myfile.txt
+```
