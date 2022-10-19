@@ -9,7 +9,7 @@ git config --global user.email "your@email.com"
 
 ```bash
 alias npp='notepad++ -multiInst -nosession'
-```bash
+```
 
 ### if notepad++ is not selected as the default text editor
 ```bash
